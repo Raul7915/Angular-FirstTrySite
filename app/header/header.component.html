@@ -1,0 +1,23 @@
+<div class="header">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <li><a routerLink="/home" [class.active]="isActive('/home')">Home</a></li>
+      <li><a routerLink="/contact" [class.active]="isActive('/contact')">Contact</a></li>
+      <li><a routerLink="/about" [class.active]="isActive('/about')">About</a></li>
+      <li><a routerLink="/login" [class.active]="isActive('/login')">Log In</a></li>
+    </ul>
+  </div>
+
+  <div class="logo"></div> 
+  
+  <div class="header-right">
+      <a class="header-right-buttons" routerLink="/home" [class.active]="isActive('/home')">Home</a>
+      <a class="header-right-buttons" routerLink="/contact" [class.active]="isActive('/contact')">Contact</a>
+      <a class="header-right-buttons" routerLink="/about" [class.active]="isActive('/about')">About</a>
+      <a class="header-right-buttons" routerLink="/login" [class.active]="isActive('/login')">Log In</a>
+  </div>
+</div>

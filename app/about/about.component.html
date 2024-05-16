@@ -1,0 +1,18 @@
+
+<div class="parallax"></div>
+
+<section class="about-section">
+  <div class="company-description">
+    <h1>About GreenT3CH</h1>
+    <p>GREENTECH offers flexible photovoltaic panel solutions that cater to various energy needs. Our advanced technology ensures efficient energy production and seamless integration into diverse applications, providing sustainable and cost-effective energy solutions for both residential and commercial clients.</p>
+</div>
+  <div class="project-gallery">
+    <div class="row" *ngFor="let row of projects; let i = index">
+      <div class="column" *ngFor="let project of row"> 
+        <img src="{{ project.image }}" alt="{{ project.name }}" (click)="goToProjectDetails(project.id)">
+      </div>      
+    </div>
+  </div>
+</section>
+
+<div class="parallax"></div>

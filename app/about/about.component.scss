@@ -1,0 +1,94 @@
+.parallax {
+  background-image: url("C:/Users/Raul/APLICATIE_PIU/src/assets/BACKGROUND3.jpg");
+  min-height: 150px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.about-section {
+  margin: 10px;
+  background-color: rgba(39, 134, 39, 0.767);
+  .company-description {
+    padding-top: 10px;
+    p {
+      text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 25px;
+      padding-bottom: 10px;
+      color: #ffffff;
+  }
+  
+  h1 {
+      margin-top: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #ffffff;
+      padding-bottom: 25px;
+      text-align: center;
+      font-size: 30px;
+  }
+  }
+
+  .projects-intro {
+    margin-top: 20px;
+    h2 {
+      font-size: 25px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #ffffff;
+      
+    }
+  }
+
+  .project-gallery {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 280px;
+        border-radius: 5px;
+        transition: all 0.3s; 
+        
+      }
+  
+      img:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 12px 30px 0 rgba(0, 0, 0, 0.25);
+        opacity: 0.85;
+        cursor: pointer;
+      
+      }
+
+      a {
+        margin-top: 5px;
+        text-decoration: none;
+        font-size: 15px;
+        color: rgba(39, 134, 39, 0.767);
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+          color: rgba(39, 134, 39, 0.767);
+        }
+      }
+    }
+  }
+}
+
+
+a.active {
+  background-color: #3f2707b4;
+  color: white;
+}

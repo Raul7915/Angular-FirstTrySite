@@ -1,0 +1,176 @@
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #d2d2d2d0;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style the header links */
+ a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 20px;
+  margin: 3px;
+}
+
+a.active {
+  background-color: #3f2707b4; 
+  color: white; 
+}
+
+.logo {
+  width: 80px; 
+  height: 80px;
+  background-image: url("C:/Users/Raul/APLICATIE_PIU/src/assets//LOGO.png");
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  margin-right: auto;
+}
+
+/* Change the background color on mouse-over */
+ a:hover {
+  background-color: rgba(18, 185, 18, 0.822);
+  color: white;
+}
+
+/* Style the active/current link*/
+
+
+.header-right-buttons{
+  background-color: rgba(39, 134, 39, 0.767);
+  color: white;
+  margin-right: 5px;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+  margin-right: 20px;
+}
+
+ a.active {
+  background-color:#3f2707b4;
+  color: white;
+}
+
+#home {
+  text-align: center;
+}
+
+
+.w3-content
+{
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.parallax {
+  /* The image used */
+  background-image: url("C:/Users/Raul/APLICATIE_PIU/src/assets/BACKGROUND3.jpg");
+
+  /* Set a specific height */
+  min-height: 150px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#menuToggle {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 30px;
+  margin-left: 20px;
+  
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+#menuToggle a
+{
+  text-decoration: none;
+  color: #ffffff;
+  
+  transition: color 0.3s ease;
+}
+
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle input {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  width: 45px;
+
+  z-index: 2; /* in order to place the checkbox over the hamburguer */
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block; /* to ensure that each span element occupies its own line. */
+  width: 36px;
+  height: 5px;
+  margin-bottom: 5px; /* create some spacing between the span elements. */
+  position: relative; /* allow for positioning changes in relation to the parent div.*/
+  background:  #3f2707b4;
+  border-radius: 1px;
+  z-index: 1; /* ensure that the span element is under the checkbox */
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  background: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transform-origin: 10px 0px; /* set to 4px 0px to specify the center of rotation for the transform property above. */
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-0px, -0px);
+  background: #ffffff;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -2px);
+}
+#menu {
+  position: absolute;
+  left: -300px;
+  top: 140px;
+  width: 180px;
+  margin: -180px -50px;
+  padding: 20px;
+  padding-top: 100px;
+  background: #3f2707c5;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transition: left 0.5s;
+}
+
+#menu li {
+  padding: 40px 40px;
+  font-size: 20px;
+  
+}
+#menuToggle input:checked ~ ul {
+  left: 50px;
+}

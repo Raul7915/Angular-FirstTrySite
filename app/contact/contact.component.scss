@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.fcf-body {
+    margin-left: 150px;
+    margin-right: 150px;
+    flex: auto;
+}
+
+#fcf-form {
+    margin-bottom: 20px;
+}
+
+.fcf-h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.fcf-form-group {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.fcf-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.fcf-input-group {
+    margin-bottom: 10px;
+}
+
+.fcf-form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#fcf-button {
+    background-color: rgba(39, 134, 39, 0.767);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 100%;
+    margin-left: 8px;
+}
+
+#fcf-button:hover {
+    background-color:rgba(39, 134, 39, 0.767);
+}
+
+.contact-info-container {
+    height: 450px;
+    background-color: rgba(39, 134, 39, 0.767);
+    font-size: 20px;
+    width: 650px;
+    margin: auto;
+    margin-right: 150px;
+    margin-top: -10px;
+    color: white;
+}
+
+.contact-info {
+    margin: 45px;
+    color: white;
+    display: ruby-text;
+}
+
+.contact-info h2 {
+    text-align: center;
+}
+
+.contact-info p {
+    text-align: center;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 20px;
+}
+
+.contact-info i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.parallax {
+    height: 300px;
+    margin-top: 30px;
+    background: url('C:/Users/Raul/APLICATIE_PIU/src/assets/BACKGROUND3.jpg');
+    background-size: cover;
+}
+
+a.active {
+    background-color: #3f2707b4;
+    color: white;
+}

@@ -1,0 +1,13 @@
+<div class="parallax"></div>
+
+<section class="project-details-page" *ngIf="project">
+  <table>
+    <tr>
+      <td><img [src]="project.image" alt="{{ project.name }}"></td>
+      <td>  <h2>{{ project.name }}</h2><p>{{ project.description }}</p></td>
+    </tr>
+  </table>
+  
+</section>
+
+<div class="parallax"></div>
